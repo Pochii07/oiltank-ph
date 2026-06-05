@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# Node / Vite
+node_modules/
+frontend/dist/
+.vite/
+
+# Terraform
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/*.tfstate
+infra/*.tfstate.*
+infra/*.tfvars
+!infra/*.tfvars.example
+infra/.terraform.tfstate.lock.info
+crash.log
+
+# Secrets / env
+.env
+.env.local
+*.pem
+*-key.json
+service-account*.json
+
+# Local data
+backend/bootstrap/data/*.csv
+backend/bootstrap/data/*.zip
+!backend/bootstrap/data/.gitkeep
+
+# Local working log (contains operational identifiers — keep private)
+PROGRESS.md
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
